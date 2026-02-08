@@ -21,49 +21,6 @@
   - `npm run test-nonrepeat`
 */
 function nonrepeat(str) {
-    if (str.length === 0) return null;
-
-    let freq = {};
-    // * Count the char
-    for (const char of str) {
-        freq[char] = (freq[char] || 0) + 1;
-    }
-    // * find 1st char have 1 count
-
-    for (const char of str) {
-        if (freq[char] == 1) {
-            return char;
-        }
-    }
-    return null;
+  // Your code here
 }
-// function nonrepeat(str) {
-//     if (str === "") return null;
-//     let data = str.split("");
-//     let unique = {};
-
-//     data.forEach((element) => {
-//         if (!unique[element]) {
-//             unique[element] = 1;
-//         } else {
-//             unique[element]++;
-//         }
-//     });
-//     let ans = "";
-//     for (const [key, value] of Object.entries(unique)) {
-//         if (value <= 1) {
-//             ans = key;
-//             break;
-//         }
-//     }
-//     let doubled = Object.values(unique);
-
-//     if (!doubled.includes(1)) {
-//         return null;
-//     }
-//     return ans;
-// }
-// let result = nonrepeat("aabc");
-// console.log(result);
-
 module.exports = nonrepeat;

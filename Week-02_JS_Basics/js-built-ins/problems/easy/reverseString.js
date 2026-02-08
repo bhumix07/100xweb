@@ -19,24 +19,7 @@
 */
 
 function reverseString(str) {
-    if (str == "") return "";
-    let ans="";
-    let data = str.split("");
-
-    for (let index = data.length - 1; index >= 0; index--) {
-        ans = ans + data[index];
-    }
-    return ans;
+  // Your code here
 }
-
-/* //! ----------------------------- Better Approach ---------------------------- */
-
-// let str = "hello";
-// let reversed = str.split("").reverse().join("");
-// console.log(reversed); // "olleh"
-
-// let str = "";
-// let result = reverseString(str);
-// console.log(result);
 
 module.exports = reverseString;

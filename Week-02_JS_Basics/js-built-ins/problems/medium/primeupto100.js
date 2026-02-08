@@ -14,23 +14,9 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-prime`
 */
-// !! j * j <= i so confused with this logic
+
 function getPrimesUpTo100() {
-    let n = 100;
-    let ans = [];
-    for (let i = 2; i <= n; i++) {
-        let prime = true;
-        for (let j = 2; j <= i/2; j++) {
-            if (i % j == 0) {
-                prime = false;
-                break;
-            }
-        }
-        if (prime) {
-            ans.push(i);
-        }
-    }
-    return ans;
+  // Your code here
 }
 
 module.exports = { getPrimesUpTo100 };
